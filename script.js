@@ -1,4 +1,5 @@
 const rootElement = document.querySelector("#root");
+let search = document.getElementById('search-input');
 
 const fetchUrl = (url) => fetch(url).then((res) => res.json());
 
@@ -59,11 +60,28 @@ const makeDomFromData = (data, rootElement) => {
   }
 };
 
+function searchFunc() {
+  search.addEventListener('input', () => {
+    if (search.value.length === 0) {
+      rootElement.innerHTML = "LOADING...";
+      fetchUrl("https://rickandmortyapi.com/api/character").then((data) =>
+        makeDomFromData(data, rootElement)
+      );
+    } else {
+      rootElement.innerHTML = "LOADING...";
+      fetchUrl(`https://rickandmortyapi.com/api/character/?name=${search.value}`).then((data) =>
+        makeDomFromData(data, rootElement)
+      );
+    }
+  })
+}
+
 const init = () => {
   rootElement.innerHTML = "LOADING...";
   fetchUrl("https://rickandmortyapi.com/api/character").then((data) =>
     makeDomFromData(data, rootElement)
   );
+  searchFunc();
 };
 
 
