@@ -1,5 +1,5 @@
 const rootElement = document.querySelector("#root");
-let search = document.getElementById('search-input');
+const search = document.getElementById('search-input');
 
 const fetchUrl = (url) => fetch(url).then((res) => res.json());
 

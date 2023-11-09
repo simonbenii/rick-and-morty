@@ -24,40 +24,37 @@ div.characters {
   padding: 20px;
 }
 
-/* Character Card */
 div.char {
   position: relative;
   border: 2px solid rgb(180, 211, 180);
+  border-radius: 5%;
 }
-
-/* Character Name */
 div.char h2 {
   display: flex;
   transform: translateY(-55%);
   color: rgb(180, 211, 180);
-  background-color: rgba(0, 0, 0, 0.5);
   margin: -16px;
   justify-content: center;
+  text-shadow: #000 1px 0 10px;
 }
-
-/* Character Image */
 div.char img {
   width: 100%;
   max-width: 100%;
-  /* Added for responsiveness */
-  height: auto;
-  /* Added for responsiveness */
+  border-radius: 5%;
 }
 
-/* Navigation Buttons */
+h1 {
+  text-align: center;
+  color: rgb(180, 211, 180);
+  text-shadow: #000 1px 0 10px;
+}
+
 div.buttons {
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
   padding-bottom: 20px;
 }
-
-/* Button Styles */
 div.buttons button {
   display: inline-block;
   padding: 10px 20px;
@@ -69,23 +66,19 @@ div.buttons button {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 div.buttons button:hover {
-  background-color: rgb(128, 205, 128);
+  background-color: rgb(73, 143, 73);
 }
 
-/* Character Details */
 .char .char-content {
   position: relative;
 }
-
 .char .char-content img {
   display: block;
   max-width: 300px;
   height: auto;
   padding-block-end: 4px;
 }
-
 .char .char-content .hidden-info {
   display: none;
   position: absolute;
@@ -95,10 +88,15 @@ div.buttons button:hover {
   padding: 10px;
   text-align: left;
   box-sizing: border-box;
+  border-radius: 5%;
 }
 
 .char .char-content:hover .hidden-info {
   display: block;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
 }
 
 #input {
@@ -114,11 +112,6 @@ input {
   border-radius: 4px;
   background-color: rgba(175, 226, 175, 0.695);
   color: #333;
-  width: 87%;
+  width: 50%;
   text-align: center;
-}
-
-h1 {
-  color: rgb(175, 226, 175);
-  text-align: center;
-}
+}/*# sourceMappingURL=style.css.map */
