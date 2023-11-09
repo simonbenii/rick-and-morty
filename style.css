@@ -1,0 +1,98 @@
+/* Reset CSS */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+html {
+  background-color: rgb(5, 5, 5);
+}
+
+/* Characters Container */
+div.characters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Character Card */
+div.char {
+  position: relative;
+  border: 2px solid rgb(180, 211, 180);
+}
+
+/* Character Name */
+div.char h2 {
+  display: flex;
+  transform: translateY(-55%);
+  color: rgb(180, 211, 180);
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: -16px;
+  justify-content: center;
+}
+
+/* Character Image */
+div.char img {
+  width: 100%;
+  max-width: 100%;
+  /* Added for responsiveness */
+  height: auto;
+  /* Added for responsiveness */
+}
+
+/* Navigation Buttons */
+div.buttons {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+
+/* Button Styles */
+div.buttons button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgb(128, 205, 128);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+div.buttons button:hover {
+  background-color: rgb(128, 205, 128);
+}
+
+/* Character Details */
+.char .char-content {
+  position: relative;
+}
+
+.char .char-content img {
+  display: block;
+  max-width: 300px;
+  height: auto;
+  padding-block-end: 4px;
+}
+
+.char .char-content .hidden-info {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(175, 226, 175, 0.5);
+  padding: 10px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.char .char-content:hover .hidden-info {
+  display: block;
+}/*# sourceMappingURL=style2.css.map */
