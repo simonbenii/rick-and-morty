@@ -16,6 +16,7 @@ const characterComponent = (characterData) => `
       <div class="hidden-info">
         <p>Status: ${characterData.status}</p>
         <p>Type: ${characterData.type}</p>
+        <p>appears in: ${characterData.episode.length} episodes</p>
         <p>Species: ${characterData.species}</p>
         <p>Gender: ${characterData.gender}</p>
         <p>Origin: ${characterData.origin.name}</p>
