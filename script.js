@@ -19,7 +19,6 @@ const characterComponent = (characterData) => `
         <p>Appears in: ${characterData.episode.length} episodes</p>
         <p>Species: ${characterData.species}</p>
         <p>Gender: ${characterData.gender}</p>
-        <p>Origin: ${characterData.origin.name}</p>
         <p>Location: ${characterData.location.name}</p>
       </div>
     </div>
