@@ -31,11 +31,16 @@ div.char {
 
   h2 {
     display: flex;
-    transform: translateY(-55%);
+    // transform: translateY(-55%);
     color: rgb(180, 211, 180);
-    margin: -16px;
+    // margin: -16px;
     justify-content: center;
     text-shadow: #000 1px 0 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
   }
 
   img {
@@ -81,7 +86,6 @@ div.buttons {
     display: block;
     max-width: 300px;
     height: auto;
-    padding-block-end: 4px;
   }
 
   .hidden-info {
